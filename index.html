@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.style.css" />
+    <title>Swagsy's TODO Liste</title>
+  </head>
+  <body>
+    <h1>Swagsy's TODO Liste!</h1>
+    <form id="todoForm">
+      <input
+        type="text"
+        id="addItem"
+        placeholder="Was möchtest du hinzufügen?"
+      />
+      <button type="submit" id="submit">Hinzufügen</button>
+    </form>
+    <div class="todo">
+      <p id="todoP">Was hast du noch alles zu tun?</p>
+      <ul id="listParents" class="listParent">
+        <li class="itemOnList">
+          <input class="checkboxes" type="checkbox" />Learn JavaScript
+        </li>
+        <li class="itemOnList">
+          <input class="checkboxes" type="checkbox" />Build a scam website
+        </li>
+        <li class="itemOnList">
+          <input class="checkboxes" type="checkbox" />scam people
+        </li>
+      </ul>
+    </div>
+    <div class="randomQuote">
+      <p id="randomQuoteOutput"></p>
+    </div>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
